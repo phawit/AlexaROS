@@ -4,21 +4,22 @@ sent data between Alexa and ROS topic.
 roslaunch rosbridge_server rosbridge_websocket.launch
 rostopic echo /speech_recognition
 
-in index.js
+1.Make AlexaROS.zip
+-index.js
 APP_ID = 'amzn1.ask.skill.927bcbb3-ff87-4bed-954d-d6a1c13c7f0b' from https://developer.amazon.com/
 url : 'ws://PubilicIP:9090'
-url : 'ws://phawit.ddns.net:9090'
+or url : 'ws://phawit.ddns.net:9090'
 **whatmyip for find PubilicIP
+-Generate AlexaROS.zip (node_modules,index.js,AlexaSkill.ja)
 
-set router http://192.168.1.1
-forword port 9090 to IP_localROS
+2.Set router http://192.168.1.1
+-forword port 9090 to IP_localROS
 
-make own ddns
-https://www.noip.com/
-set in router
-set auto update ip in ubuntu
+3.Make own ddns https://www.noip.com/
+-set in router
+-set Dynamic Update Detected ip in ubuntu
 
-AWS-->Lambda >> N.virginia
+4.AWS --> Lambda >> N.virginia
 https://aws.amazon.com/
 code : AlexaROS.zip
 Configuration : Runtime-Node.js 4.3
@@ -27,7 +28,7 @@ Configuration : Runtime-Node.js 4.3
                 Existing role : Lambda_basic_execution
 Action >> configs > config test event > start session            
 
-Amazon Developer Services --> Alexa skill kit
+4.Amazon Developer Services --> Alexa skill kit
 https://developer.amazon.com/
 Intent Schema :
 {
