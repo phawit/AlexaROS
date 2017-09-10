@@ -10,14 +10,25 @@ APP_ID = 'amzn1.ask.skill.927bcbb3-ff87-4bed-954d-d6a1c13c7f0b' from https://dev
 url : 'ws://PubilicIP:9090'
 or url : 'ws://phawit.ddns.net:9090'
 **whatmyip for find PubilicIP
--Generate AlexaROS.zip (node_modules,index.js,AlexaSkill.ja)
+-Generate AlexaROS.zip (node_modules,index.js,AlexaSkill.js)
+** node_modules from 
+cd AlexaROS
+npm init ??
+npm install roslib
 
 2.Set router http://192.168.1.1
 -forword port 9090 to IP_localROS
+-check status on www.canyouseeme.org
 
 3.Make own ddns https://www.noip.com/
 -set in router
--set Dynamic Update Detected ip in ubuntu
+-set Dynamic Update Detected ip in ubuntu https://www.youtube.com/watch?v=8xp4kkbsZi0
+  ▪ cd /usr/local/src
+  ▪ wget http://www.no-ip.com/client/linux/noip-duc-linux.tar.gz
+  ▪ tar xzf noip-duc-linux.tar.gz
+  ▪ cd no-ip-2.1.9
+  ▪ make
+  ▪ make install
 
 4.AWS --> Lambda >> N.virginia
 https://aws.amazon.com/
